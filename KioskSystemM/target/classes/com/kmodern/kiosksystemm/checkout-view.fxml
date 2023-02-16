@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../styles/general.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kmodern.kiosksystemm.CheckoutController">
+   <children>
+      <Region layoutX="289.0" layoutY="44.0" prefHeight="656.0" prefWidth="88.0" />
+      <HBox layoutX="13.0" layoutY="13.0" prefHeight="89.0" prefWidth="43.0" styleClass="header-container" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Text fill="WHITE" layoutX="816.0" layoutY="37.171875" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="header-text" text="Check Out" textAlignment="CENTER" wrappingWidth="226.4061279296875" AnchorPane.topAnchor="5.0" />
+      <AnchorPane layoutX="4.0" layoutY="123.0" maxHeight="475.0" prefHeight="400.0" prefWidth="266.0" styleClass="info-bar" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Text fill="#282828" layoutX="72.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Helpful Tips">
+               <font>
+                  <Font name="Verdana Pro" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="20.0" layoutY="97.0" lineSpacing="2.5" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="info-text" text="To check out simply enter your &#10;room number then press &quot;Done&quot;" AnchorPane.leftAnchor="20.0" />
+            <Text layoutX="20.0" layoutY="156.0" lineSpacing="2.5" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="info-text" text="Once you see check out &#10;complete you are all set and ready to go" wrappingWidth="239.19999999999982" AnchorPane.leftAnchor="20.0" />
+            <ImageView fitHeight="51.0" fitWidth="55.0" layoutX="16.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/info.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="14.0" layoutY="237.0" lineSpacing="2.5" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="info-text" text="We hope you enjoyed your stay &#10;at K Modern Underwater Hotel.&#10;Safe travels and we hope to see&#10;you again soon!" wrappingWidth="239.19999999999982" AnchorPane.leftAnchor="20.0" />
+         </children>
+      </AnchorPane>
+      <Region layoutX="720.0" layoutY="53.0" prefHeight="656.0" prefWidth="179.0" />
+      <AnchorPane layoutX="377.0" layoutY="372.0" minHeight="216.0" minWidth="329.0" prefHeight="216.0" prefWidth="329.0" styleClass="card-bottom" AnchorPane.rightAnchor="363.0">
+         <children>
+            <Text layoutX="59.0" layoutY="60.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-header-text" text="Check&#10;Out" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="25.0" />
+            <Text layoutX="20.0" layoutY="111.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-text" text="Enter room number to complete&#10;check out process" wrappingWidth="249.24725341796875" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="20.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-text" text="Then click" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="92.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="primary-text" text="&quot;Check Out&quot;" AnchorPane.leftAnchor="92.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <JFXButton layoutX="264.0" onAction="#checkoutAction" prefHeight="250.0" prefWidth="78.0" ripplerFill="#11a3d4" styleClass="dual-radius-btn" text="Check&#10; Out">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="377.0" layoutY="70.0" maxWidth="343.0" minHeight="280.0" prefHeight="280.0" prefWidth="343.0" styleClass="card-top">
+         <children>
+            <TextField fx:id="roomNumberInputTextField" layoutX="55.0" layoutY="29.0" prefHeight="43.0" prefWidth="230.0" promptText="Enter Room #" styleClass="txtfield-layout2" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="29.0" />
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="228.0" layoutY="31.0" onAction="#clearInputDisplay" prefHeight="37.0" prefWidth="57.0">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="34.0" onDragDetected="#clearInputDisplay" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/erase.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <HBox layoutX="55.0" layoutY="86.0" prefHeight="108.0" prefWidth="239.0" spacing="3.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="46.0">
+               <children>
+                  <VBox prefHeight="108.0" prefWidth="60.0" spacing="3.0">
+                     <children>
+                        <JFXButton onAction="#onScreenKeyboard" prefHeight="51.0" prefWidth="60.0" styleClass="keyboard" text="1" textFill="WHITE" />
+                        <JFXButton onAction="#onScreenKeyboard" prefHeight="51.0" prefWidth="60.0" styleClass="keyboard" text="5" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="108.0" prefWidth="61.0" spacing="3.0">
+                     <children>
+                        <JFXButton onAction="#onScreenKeyboard" prefHeight="51.0" prefWidth="60.0" styleClass="keyboard" text="2" textFill="WHITE" />
+                        <JFXButton onAction="#onScreenKeyboard" prefHeight="51.0" prefWidth="60.0" styleClass="keyboard" text="6" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="108.0" prefWidth="62.0" spacing="3.0">
+                     <children>
+                        <JFXButton onAction="#onScreenKeyboard" prefHeight="51.0" prefWidth="60.0" styleClass="keyboard" text="3" textFill="WHITE" />
+                        <JFXButton onAction="#onScreenKeyboard" prefHeight="51.0" prefWidth="60.0" styleClass="keyboard" text="7" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="108.0" prefWidth="60.0" spacing="3.0">
+                     <children>
+                        <JFXButton onAction="#onScreenKeyboard" prefHeight="51.0" prefWidth="60.0" styleClass="keyboard" text="4" textFill="WHITE" />
+                        <JFXButton onAction="#onScreenKeyboard" prefHeight="51.0" prefWidth="60.0" styleClass="keyboard" text="8" textFill="WHITE" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="55.0" layoutY="195.0" prefHeight="51.0" prefWidth="239.0" spacing="3.0">
+               <children>
+                  <JFXButton onAction="#onScreenKeyboard" prefHeight="51.0" prefWidth="60.0" styleClass="keyboard" text="9" textFill="WHITE" />
+                  <JFXButton onAction="#onScreenKeyboard" prefHeight="51.0" prefWidth="120.0" styleClass="keyboard" text="0" textFill="WHITE" />
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#clearInputDisplay" prefHeight="51.0" prefWidth="60.0" styleClass="keyboard" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/clear.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="39.0" fitWidth="51.0" layoutX="42.0" layoutY="523.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+   <styleClass>
+      <String fx:value="window" />
+      <String fx:value="background" />
+   </styleClass>
+</AnchorPane>

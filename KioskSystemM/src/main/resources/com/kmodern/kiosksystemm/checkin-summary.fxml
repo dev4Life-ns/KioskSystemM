@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="securityDepositLabel" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../styles/general.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kmodern.kiosksystemm.CheckInSummaryController">
+   <styleClass>
+      <String fx:value="window" />
+      <String fx:value="background" />
+   </styleClass>
+   <children>
+      <HBox layoutX="33.0" layoutY="17.0" prefHeight="100.0" prefWidth="200.0" styleClass="header-container" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="837.0" layoutY="5.0" prefHeight="40.0" prefWidth="229.0" text="Summary Details " textFill="WHITE" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="Verdana Pro Black" size="20.0" />
+         </font>
+      </Label>
+      <VBox fx:id="infoBar" layoutY="141.0" maxHeight="471.0" prefHeight="471.0" prefWidth="256.0" spacing="3.0" styleClass="info-bar" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="141.0">
+         <children>
+            <HBox prefHeight="66.0" prefWidth="256.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../ExpressKioskSystem/src/main/resources/images/info.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="infoHeaderLabel" prefHeight="18.0" prefWidth="153.0">
+                     <HBox.margin>
+                        <Insets left="15.0" top="40.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="47.0" prefWidth="256.0">
+               <children>
+                  <Label fx:id="info2" prefHeight="49.0" prefWidth="254.0" styleClass="info-text2" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="230.0">
+               <children>
+                  <Label prefHeight="49.0" prefWidth="254.0" styleClass="info-text2" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="230.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="49.0" prefWidth="254.0" styleClass="info-text2" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="49.0" prefWidth="230.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="49.0" prefWidth="254.0" styleClass="info-text2" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="15.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="419.0" layoutY="89.0" maxWidth="400.0" minHeight="318.0" prefHeight="318.0" prefWidth="375.0" style="-fx-background-color: a6c5d3; -fx-background-radius: 0 45 0 45;">
+         <children>
+            <Label layoutX="25.0" layoutY="32.0" text="Summary" textFill="#5e5e5e" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Verdana Pro" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="138.0" prefHeight="50.0" prefWidth="334.0" style="-fx-background-color: white;" />
+            <Text fill="#333333" layoutX="29.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax">
+               <font>
+                  <Font name="Verdana Pro Cond Semibold" size="16.0" />
+               </font>
+            </Text>
+            <Label layoutX="16.0" layoutY="67.0" prefHeight="50.0" prefWidth="334.0" style="-fx-background-color: white;" />
+            <Text fill="#333333" layoutX="26.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nightly Rate">
+               <font>
+                  <Font name="Verdana Pro Cond Semibold" size="16.0" />
+               </font>
+            </Text>
+            <Label layoutX="18.0" layoutY="206.0" prefHeight="50.0" prefWidth="334.0" style="-fx-background-color: white;" />
+            <Text fill="#333333" layoutX="26.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Security Deposit">
+               <font>
+                  <Font name="Verdana Pro Cond Semibold" size="16.0" />
+               </font>
+            </Text>
+            <Label layoutX="226.0" layoutY="81.0" prefHeight="26.0" prefWidth="86.0" textAlignment="CENTER" />
+            <Label layoutX="226.0" layoutY="77.0" prefHeight="27.0" prefWidth="17.0" text="\$" textAlignment="CENTER">
+               <font>
+                  <Font name="Verdana Pro Semibold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="225.0" layoutY="148.0" prefHeight="27.0" prefWidth="17.0" text="\$" textAlignment="CENTER">
+               <font>
+                  <Font name="Verdana Pro Semibold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="224.0" layoutY="217.0" prefHeight="27.0" prefWidth="17.0" text="\$" textAlignment="CENTER">
+               <font>
+                  <Font name="Verdana Pro Semibold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="nightlyRateLabel" layoutX="240.0" layoutY="77.0" prefHeight="34.0" prefWidth="94.0" />
+            <Label fx:id="taxLabel" layoutX="241.0" layoutY="146.0" prefHeight="34.0" prefWidth="94.0" />
+            <Label layoutX="239.0" layoutY="216.0" prefHeight="34.0" prefWidth="94.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="419.0" layoutY="373.0" prefHeight="234.0" prefWidth="382.0" style="-fx-background-color: white; -fx-background-radius: 0 45 0 45;">
+         <children>
+            <Label layoutX="22.0" layoutY="28.0" prefHeight="26.0" prefWidth="85.0" text="TOTAL" textFill="#5e5e5e">
+               <font>
+                  <Font name="Verdana Pro Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="summaryTotal" layoutX="216.0" layoutY="30.0" prefHeight="26.0" prefWidth="131.0" text="\$" textFill="#0755ff">
+               <font>
+                  <Font name="Verdana Pro Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="termsLabel" layoutX="25.0" layoutY="69.0" prefHeight="136.0" prefWidth="266.0" styleClass="card-text" textFill="#3b3b3b" wrapText="true" />
+            <JFXButton layoutX="304.0" layoutY="115.0" prefHeight="118.0" prefWidth="78.0" styleClass="dual-radius-btn" text="Authorize" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

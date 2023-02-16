@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../styles/general.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kmodern.kiosksystemm.CheckinQrController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="header-container" stylesheets="@../../../styles/general.css" />
+      <Label layoutX="847.0" layoutY="3.0" styleClass="header-text" text="Check In" AnchorPane.rightAnchor="68.20000000000005" />
+      <AnchorPane layoutX="-4.0" layoutY="111.0" maxHeight="464.0" prefHeight="400.0" prefWidth="263.0" styleClass="info-bar" AnchorPane.leftAnchor="-4.0">
+         <children>
+            <Label layoutX="20.0" layoutY="98.0" prefHeight="18.0" prefWidth="226.0" styleClass="info-text" text="Select your check in method" AnchorPane.leftAnchor="20.0" />
+            <Label layoutX="18.0" layoutY="136.0" prefHeight="46.0" prefWidth="226.0" styleClass="info-text" text="You will need your QRcode or reservation pin to continue" wrapText="true" AnchorPane.leftAnchor="20.0" />
+            <Label layoutX="18.0" layoutY="193.0" lineSpacing="1.5" prefHeight="46.0" prefWidth="242.0" styleClass="info-text" text="Vaild ID or Driver's License required to verify quest identity" wrapText="true" AnchorPane.leftAnchor="20.0" />
+            <Label layoutX="18.0" layoutY="245.0" lineSpacing="1.5" prefHeight="83.0" prefWidth="247.0" styleClass="info-text" text="If unable to meet specifications please head  over to guest services for additional assistance" wrapText="true" AnchorPane.leftAnchor="20.0" />
+            <Label layoutX="93.0" layoutY="38.0" prefHeight="26.0" prefWidth="170.0" styleClass="card-header-text" text="Getting Started" textAlignment="CENTER">
+               <font>
+                  <Font name="Verdana Pro" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="56.0" fitWidth="68.0" layoutX="27.0" layoutY="24.0" pickOnBounds="true" AnchorPane.leftAnchor="20.0">
+               <image>
+                  <Image url="@../../../images/info.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <VBox layoutX="304.0" layoutY="82.0" prefHeight="586.0" prefWidth="407.0" spacing="20.0" AnchorPane.leftAnchor="304.0" AnchorPane.rightAnchor="369.0">
+         <children>
+            <AnchorPane prefHeight="288.0" prefWidth="407.0" styleClass="card-top2">
+               <children>
+                  <Canvas fx:id="cv" height="298.0" layoutX="-1.0" layoutY="-3.0" width="410.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="3.1999999999999886" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Label fx:id="timeLbl" layoutX="37.0" layoutY="263.0" lineSpacing="2.0" prefHeight="18.0" prefWidth="106.0" textFill="#262525" />
+                  <TextField fx:id="optionsTextField" layoutX="254.0" layoutY="260.0" style="-fx-background-color: transparent;" />
+                  <TextField fx:id="mrlTextField1" layoutX="116.0" layoutY="261.0" style="-fx-background-color: transparent;" />
+                  <Label layoutX="90.0" layoutY="260.0" prefHeight="18.0" prefWidth="207.0" textFill="#949494" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="310.0" prefWidth="407.0" style="-fx-background-radius: 0 45 0 45; -fx-background-color: white;">
+               <children>
+                  <JFXButton fx:id="readVideoStreamBtn" layoutX="332.0" layoutY="151.0" onMouseClicked="#readVideoStreamBtn_MouseClicked" prefHeight="147.0" prefWidth="68.0" ripplerFill="#0eb1d9" style="-fx-background-color: #409db3; -fx-background-radius: 0 45 0 45;" text="Read QR" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></JFXButton>
+                  <JFXButton layoutX="61.0" layoutY="153.0" onMouseClicked="#showVideoBtn_MouseClicked" prefHeight="172.0" prefWidth="70.0" ripplerFill="#0ea6cc" styleClass="dual-radius-btn" text="Start&#10;Imager" textAlignment="CENTER" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Label layoutX="20.0" layoutY="21.0" lineSpacing="2.0" styleClass="card-header-text" text="QR&#10;Scanner" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="21.0" />
+                  <Text layoutX="61.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="primary-text" text="&quot;Start Imager&quot;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="160.0" layoutY="93.0" prefHeight="18.0" prefWidth="68.0" styleClass="card-text" text="to begin. " />
+                  <Label layoutX="20.0" layoutY="92.0" styleClass="card-text" text="Press" />
+                  <Label layoutX="20.0" layoutY="171.0" prefHeight="18.0" prefWidth="302.0" styleClass="card-text" text="Next line QRcode up with image scanner." />
+                  <Label layoutX="20.0" layoutY="198.0" prefHeight="18.0" prefWidth="302.0" styleClass="card-text" text="Once successfully recognized a square will" />
+                  <Label layoutX="20.0" layoutY="225.0" prefHeight="18.0" prefWidth="302.0" styleClass="card-text" text="appear around the barcode." />
+                  <Label layoutX="226.0" layoutY="93.0" prefHeight="18.0" prefWidth="82.0" styleClass="card-text" text="Default vlcj " />
+                  <Label layoutX="20.0" layoutY="121.0" prefHeight="18.0" prefWidth="290.0" styleClass="card-text" text="will popup. When the cam begins you can" AnchorPane.leftAnchor="20.0" />
+                  <Label layoutX="20.0" layoutY="146.0" prefHeight="18.0" prefWidth="290.0" styleClass="card-text" text="choose to close or use both windows" />
+                  <TextField fx:id="mrlTextField" layoutX="40.0" layoutY="251.0" promptText="MRL: dshow://" style="-fx-background-color: white;" />
+                  <TextField layoutX="192.0" layoutY="251.0" promptText="Options:" style="-fx-background-color: white;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="756.0" layoutY="98.0" prefHeight="362.0" prefWidth="290.0" style="-fx-background-color: #a6c5d3; -fx-background-radius: 0 45 0 0;">
+         <children>
+            <TextArea fx:id="resultTA" editable="false" layoutX="11.0" layoutY="10.0" prefHeight="350.0" prefWidth="267.0" promptText="Reservation Details From QRcode" style="-fx-background-radius: 0 45 0 0;" wrapText="true">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </TextArea>
+           
+            <CheckBox layoutX="172.0" layoutY="300.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="93.0" text="Acknowledge" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="756.0" layoutY="433.0" prefHeight="232.0" prefWidth="296.0" style="-fx-background-color: white; -fx-background-radius: 0 55 0 55;">
+         <children>
+            <JFXButton fx:id="continueBtn" disable="true" layoutX="217.0" prefHeight="232.0" prefWidth="70.0" styleClass="dual-radius-btn" stylesheets="@../../../styles/general.css" text="Continue" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Label contentDisplay="CENTER" layoutX="8.0" layoutY="-3.0" lineSpacing="5.0" prefHeight="82.0" prefWidth="84.0" styleClass="card-header-text" text="Stay &#10;Details" textFill="#515151" wrapText="true">
+               <padding>
+                  <Insets left="15.0" top="20.0" />
+               </padding>
+            </Label>
+            <Label layoutX="21.0" layoutY="82.0" lineSpacing="2.0" prefHeight="90.0" prefWidth="191.0" styleClass="card-text" text="Verify reservation details, then select acknowledge to deactivate continue button." wrapText="true" AnchorPane.leftAnchor="21.0" />
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.410526305437088" green="0.410526305437088" blue="0.410526305437088" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+   </children>
+   <styleClass>
+      <String fx:value="window" />
+      <String fx:value="background" />
+   </styleClass>
+</AnchorPane>

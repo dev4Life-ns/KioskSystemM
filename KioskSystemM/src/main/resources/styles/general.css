@@ -1,0 +1,226 @@
+
+.window{
+    -fx-min-width:1080px;
+    -fx-min-height:700px;
+    -fx-max-width: 1080px;
+    -fx-max-height:700;
+    -fx-pref-width:1080px;
+    -fx-pref-height:700px;
+}
+
+.homescreen-background{
+    -fx-background-image: url(../images/homebg.png);
+    -fx-background-size:cover;
+    -fx-background-position: center;
+}
+
+.background{
+      -fx-background-image: url(../images/scene-bg.jpg);
+      -fx-background-size: cover;
+      -fx-background-position: center;
+  }
+
+ .header-container{
+     -fx-background-radius: 0 0 45 0;
+     -fx-background-color:#a6c5d3;
+     -fx-opacity: 0.7;
+     -fx-min-width:812px;
+     -fx-min-height:45px;
+     -fx-max-width: 812px;
+     -fx-max-height:45;
+     -fx-pref-width:812px;
+     -fx-pref-height:45px;
+ }
+
+ .header-text{
+     -fx-font-family: "Verdana Pro Black";
+     -fx-text-fill: ghostwhite;
+     -fx-font-size: 32px;
+ }
+
+ /*=================Information Bar==========*/
+
+ .info-bar{
+     -fx-background-color:#a6c5d3;
+     -fx-opacity: 0.7;
+     -fx-background-radius:55 0 55 0;
+     -fx-max-width:350px;
+     -fx-max-height:400px;
+ }
+
+.info-text{
+    -fx-font-family: "Verdana Pro Light";
+    -fx-font-size: 15px;
+    -fx-text-fill: #25252b;
+}
+
+.info-text2{
+    -fx-font-family: "Verdana Pro Light";
+    -fx-font-size: 13px;
+    -fx-text-fill: #25252b;
+}
+
+/********homemain***************/
+
+.home-checkin-btn {
+    -fx-background-color: #c6926b;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.home-checkout-button{
+    -fx-background-color:#145164;
+    -fx-font-weight:bold;
+    -fx-text-fill: white;
+}
+
+/***************************************/
+
+.overlay{
+    -fx-background-color: rgba(0,0,0,0.3);
+}
+
+.overlay2{
+    -fx-background-color: rgba(0,0,0,0.5);
+}
+
+
+/****************** card-layout******************* */
+
+  .flat-btn{
+    -fx-background-color: #fdc48f;
+    -fx-background-radius: none;
+    -fx-fill: ghostwhite;
+    -fx-font-weight: bold;
+}
+
+ .dual-radius-btn{
+    -fx-background-color:#fdc48f;
+    -fx-background-radius: 0 45 0 45;
+     -fx-fill: ghostwhite;
+    -fx-font-weight:bold;
+}
+
+ .btn-flat-bottom{
+    -fx-background-color:#fdc48f;
+    -fx-background-radius: 0 45 0 0;
+    -fx-fill: ghostwhite;
+    -fx-font-weight:bold;
+}
+
+
+ .btn2-radius{
+    -fx-background-color: #409db3;
+    -fx-background-radius: 0 45 0 45;
+    -fx-fill: ghostwhite;
+    -fx-font-weight:bold;
+}
+
+ .btn2-flat-bottom{
+    -fx-background-color: #409db3;
+    -fx-background-radius: 0 45 0 0;
+    -fx-fill: ghostwhite;
+    -fx-font-weight: bold;
+}
+
+ .btn2-flat{
+    -fx-background-color:#409db3;
+    -fx-background-radius: none;
+    -fx-fill: ghostwhite;
+    -fx-font-weight:bold;
+}
+
+.card-top{
+    -fx-background-color: #a6c5d3;
+    -fx-background-radius: 0 45 0 45;
+    -fx-min-width: 340px;
+    -fx-min-height:286px;
+    -fx-pref-width: 340px;
+    -fx-pref-height: 286px;
+    -fx-max-width: 340px;
+    -fx-max-height: 286px;
+}
+
+.card-top2{
+    -fx-background-color: #a6c5d3;
+    -fx-background-radius: 0 45 0 45;
+    -fx-min-width: 340px;
+    -fx-min-height:286px;
+    
+}
+
+.card-summary-top{
+    -fx-background-color: #a6c5d3;
+    -fx-background-radius: 0 35 0 35;
+    -fx-min-width: 350px;
+    -fx-min-height:380px;
+    -fx-pref-width:350px;
+    -fx-pref-height:380px;
+    -fx-max-width:350px;
+    -fx-max-height:380px;;
+}
+
+.card-bottom{
+    -fx-background-color: white;
+    -fx-background-radius: 0 45 0 45;
+    -fx-min-width: 340px;
+    -fx-min-height:250px;
+    -fx-pref-width: 340px;
+    -fx-pref-height: 250px;
+    -fx-max-width: 340px;
+    -fx-max-height: 250px;
+}
+
+.card-header-text{
+    -fx-font-family: "Verdana Pro";
+    -fx-font-size: 20px;
+    -fx-text-fill: #25252b;
+}
+
+.card-text{
+    -fx-font-family: "Verdana Pro Light";
+    -fx-font-size: 14px;
+    -fx-text-fill: #25252b;
+}
+
+.primary-text{
+    -fx-fill: #02a0d9;
+    -fx-font-family: "Verdana Pro Cond Semibold";
+
+}
+
+/********************misc*************************/
+
+.txtfield-layout{
+    -fx-border-insets: 0 0 0 0;
+    -fx-background-color: transparent;
+    -fx-border-style:hidden hidden solid hidden;
+    -fx-border-color: #737373;
+}
+
+ .txtfield-layout2{
+     -fx-border-insets: 0 0 0 0;
+     -fx-background-color: white;
+     -fx-border-style:hidden;
+     -fx-border-color: white;
+ }
+
+ .keyboard{
+    -fx-background-color: #1f2f3c;
+    -fx-background-radius: 4px;
+    -fx-border-color:#efefef;
+    -fx-border-style: solid;
+    -fx-border-insets:2;
+    -fx-fill: white;
+    -fx-font-family: "Verdana Pro Black";
+}
+
+.checkbox{
+   -fx-background-color: white;
+   -fx-border-color:gray; ;
+ }
+
+.checkBox:hover{
+     -fx-border-color: #267880;
+     -fx-border-width: thick;
+ }

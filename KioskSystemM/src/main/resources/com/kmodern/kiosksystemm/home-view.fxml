@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../styles/general.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kmodern.kiosksystemm.HomeController">
+   <styleClass>
+      <String fx:value="window" />
+      <String fx:value="homescreen-background" />
+   </styleClass>
+   <children>
+      <JFXButton graphicTextGap="15.0" layoutX="9.0" layoutY="18.0" onAction="#navigateToCheckInView" prefHeight="200.0" prefWidth="641.0" ripplerFill="#49d0e1" styleClass="home-checkin-btn" text="Guest Check In" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <graphic>
+            <ImageView fitHeight="134.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/check-in.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton graphicTextGap="15.0" layoutX="9.0" layoutY="510.0" onAction="#navigateToCheckoutView" prefHeight="191.0" prefWidth="639.0" styleClass="home-checkout-button" text="Guest Check Out" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="134.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true" styleClass="home-checkout-button">
+               <image>
+                  <Image url="@../../../images/check-out.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
