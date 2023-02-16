@@ -2,7 +2,9 @@
  The project found here contains partial code for a Kiosk Check-in System I implemented. 
  Feel free to actively explore the source code however, please do not take the work provided here as your own. 
  
- _Overview______________________________________________________________________________________________________________ 
+OVERVIEW
+________________________________________________________________________________________________________________
+
 A QRCheckin-in system aims to handle the check-in and check-out aspects of the hotel property-management system.
 This system facilitates the check-in and check-out procedures where guests would have the option to check in via 
 QRCode or reservation pin and check out with a QRCode or enter the room number.  
