@@ -8,7 +8,7 @@ A QRCheckin-in system aims to handle the check-in and check-out aspects of the h
 ### :wrench: Tools
 - JavaFX 
 - CSS
-- Dynamsoft Barcode Reader
+- Integrated Dynamsoft Barcode Reader
 - Vlcj    *for webcam view*
 - Zxing QR Library
 - Persistence with Hibernate
