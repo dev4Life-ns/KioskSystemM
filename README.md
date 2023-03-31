@@ -11,7 +11,7 @@ A QRCheckin-in system aims to handle the check-in and check-out aspects of the h
 - Integrated Dynamsoft Barcode Reader
 - Vlcj    *for webcam view*
 - Zxing QR Library
-- Persistence with Hibernate
+- Jakarta Persistence with Hibernate
 - MySQL / PHPMyAdmin 
 
 
